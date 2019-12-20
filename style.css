@@ -1,0 +1,27 @@
+.main_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    color:white;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    border: none;
+    margin-left: 50px;
+}
+
+.btn_wrapper {
+    display: flex;
+    
+
+}
+
