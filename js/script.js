@@ -1,6 +1,8 @@
 
 var test = 0;
+//локальный сервер вебсокет
 var socket = new WebSocket("ws://localhost:3000");
+    //открытие потока
     socket.onopen = function() {
         alert("Соединение установлено");
 
@@ -14,7 +16,7 @@ var socket = new WebSocket("ws://localhost:3000");
             return socket.send(-1000);
         });
     };
-
+    //закрытие потока
     socket.onclose = function(event) {
         if (event.wasClean) {
           alert('Соединение закрыто чисто');
@@ -31,3 +33,5 @@ var socket = new WebSocket("ws://localhost:3000");
     socket.onerror = function(error) {
         alert("Ошибка " + error.massage);
     };
+
+    
